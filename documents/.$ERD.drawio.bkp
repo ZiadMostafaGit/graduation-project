@@ -236,6 +236,12 @@
             <mxPoint x="-150" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="wPHAMOmzvQz0wvzDcsgE-129" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=1 2;exitX=0.613;exitY=-0.051;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="LBv7Q6NV7wOnJ5ve1A3O-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-370" y="770" as="sourcePoint" />
+            <mxPoint x="-260" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="LBv7Q6NV7wOnJ5ve1A3O-4" value="rent_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
           <mxGeometry x="-260" y="780" width="90" height="30" as="geometry" />
         </mxCell>
@@ -245,8 +251,8 @@
             <mxPoint x="-250" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LBv7Q6NV7wOnJ5ve1A3O-12" value="rented_time" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="-250" y="610" width="90" height="30" as="geometry" />
+        <mxCell id="LBv7Q6NV7wOnJ5ve1A3O-12" value="booking_time" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="640" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="LBv7Q6NV7wOnJ5ve1A3O-14" value="end_data" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-140" y="630" width="90" height="30" as="geometry" />
