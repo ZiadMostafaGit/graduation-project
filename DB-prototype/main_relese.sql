@@ -115,46 +115,6 @@ CREATE TABLE rentals (
     FOREIGN KEY (user_id) REFERENCES users(id)
 ) ENGINE=InnoDB;
 
--- Create trigger for date validation
-DELIMITER //
-CREATE TRIGGER validate_rental_dates
-BEFORE INSERT ON rentals
-FOR EACH ROW
-BEGIN
-    IF NEW.start_date < CURDATE() THEN
-        SIGNAL SQLSTATE '45000' 
-        SET MESSAGE_TEXT = 'Start date must be today or in the future';
-    END IF;
-    
-    IF NEW.end_date <= NEW.start_date THEN
-        SIGNAL SQLSTATE '45000' 
-        SET MESSAGE_TEXT = 'End date must be after start date';
-    END IF;
-END//
-DELIMITER ;
-
--- Create update trigger
-DELIMITER //
-CREATE TRIGGER validate_rental_dates_update
-BEFORE UPDATE ON rentals
-FOR EACH ROW
-BEGIN
-    IF NEW.start_date < CURDATE() THEN
-        SIGNAL SQLSTATE '45000' 
-        SET MESSAGE_TEXT = 'Start date must be today or in the future';
-    END IF;
-    
-    IF NEW.end_date <= NEW.start_date THEN
-        SIGNAL SQLSTATE '45000' 
-        SET MESSAGE_TEXT = 'End date must be after start date';
-    END IF;
-END//
-DELIMITER ;
-
-
-
-
-
 
 -- Create reviews table
 CREATE TABLE reviews (
